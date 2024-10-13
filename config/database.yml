@@ -8,14 +8,14 @@ default: &default
 
 development:
   <<: *default
-  database: frields_portal_development
+  database: frieds_portal_development
 
 test:
   <<: *default
-  database: frields_portal_test
+  database: frieds_portal_test
 
 production:
   <<: *default
-  database: frields_portal_production
+  database: frieds_portal_production
   username: new_app
   password: <%= ENV['NEW_APP_DATABASE_PASSWORD'] %>
